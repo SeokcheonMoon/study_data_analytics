@@ -1,3 +1,4 @@
+### summary
 |No.|Variable|Definition|Key|분석가의견|
 |--|--|--|--|--|
 |1|PassengerId|탑승객 번호|Number|번호를 이용하여 해당 목록에 있는 인원 수 분석 가능|
