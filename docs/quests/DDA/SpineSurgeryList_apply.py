@@ -13,4 +13,5 @@ def BMI(params):                                                    # BMI 구하
     return result
 df_SpineSurgeryList["BMI"] = df_SpineSurgeryList[["체중", "신장"]].apply(BMI, axis=1)   # df안에 BMI 컬럼 생성
 
+df_SpineSurgeryList.info()                                          # BMI 컬럼 생성 확인
 print(df_SpineSurgeryList["BMI"])
