@@ -15,3 +15,16 @@ df_SpineSurgeryList["BMI"] = df_SpineSurgeryList[["체중", "신장"]].apply(BMI
 
 df_SpineSurgeryList.info()                                          # BMI 컬럼 생성 확인
 print(df_SpineSurgeryList["BMI"])
+
+# BMI
+# 0       22.695623
+# 1       24.520365
+# 2       24.334049
+# 3       24.507861
+# 4       24.097465
+#           ...
+# 1889    25.964542
+# 1890    23.936062
+# 1891    25.099502
+# 1892    24.577867
+# 1893    17.361111
