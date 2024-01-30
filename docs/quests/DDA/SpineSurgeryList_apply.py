@@ -6,11 +6,11 @@ df_SpineSurgeryList = pd.DataFrame(data_SpineSurgeryList)           # csv파일�
 df_SpineSurgeryList.info()                                          # df 정보 읽기
 df_SpineSurgeryList[["체중","신장"]]                                 # df 내 해당 컬럼 확인
 
-def BMI(params):
+def BMI(params):                                                    # BMI 구하기 function
     weight = params.loc["체중"]
     tall = params.loc["신장"]*0.01		
     result = weight/tall**2
     return result
-df_SpineSurgeryList["BMI"] = df_SpineSurgeryList[["체중", "신장"]].apply(BMI, axis=1)
+df_SpineSurgeryList["BMI"] = df_SpineSurgeryList[["체중", "신장"]].apply(BMI, axis=1)   # df안에 BMI 컬럼 생성
 
 print(df_SpineSurgeryList["BMI"])
